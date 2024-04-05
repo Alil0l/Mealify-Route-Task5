@@ -1,0 +1,28 @@
+/* xsm screens */
+@media (min-width: 576px) {
+}
+/* sm screens */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding-inline: 12px;
+  }
+}
+/* md screens */
+@media (min-width: 992px) {
+  .container {
+    max-width: 980px;
+    padding-inline: 12px;
+  }
+  /* header {
+    flex-direction: row;
+  } */
+}
+/* lg screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    padding-inline: 12px;
+    margin: auto;
+  }
+}
