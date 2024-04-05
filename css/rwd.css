@@ -1,11 +1,14 @@
-/* xsm screens */
-@media (min-width: 576px) {
-}
 /* sm screens */
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
     padding-inline: 12px;
+  }
+  header .header-img {
+    max-width: 700px;
+  }
+  header .header-text .btns {
+    justify-content: center;
   }
 }
 /* md screens */
@@ -14,9 +17,20 @@
     max-width: 980px;
     padding-inline: 12px;
   }
-  /* header {
-    flex-direction: row;
-  } */
+  header .container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  header .header-img {
+    max-width: 40%;
+  }
+  header .header-text {
+    max-width: 40%;
+    text-align: start;
+  }
+  header .header-text .btns {
+    justify-content: start;
+  }
 }
 /* lg screens */
 @media (min-width: 1200px) {
@@ -24,5 +38,22 @@
     max-width: 1140px;
     padding-inline: 12px;
     margin: auto;
+  }
+  .navbar ul {
+    display: flex;
+    gap: 16px;
+  }
+  .navbar ul li {
+    padding: 8px 4px;
+  }
+  .navbar ul li a {
+    color: var(--sec-font-color);
+    font-weight: 600;
+  }
+  .navbar ul li .active {
+    font-weight: 800;
+    color: var(--main-font-color);
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--main-color-l);
   }
 }
