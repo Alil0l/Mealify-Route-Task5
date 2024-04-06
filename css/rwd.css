@@ -10,6 +10,48 @@
   header .header-text .btns {
     justify-content: center;
   }
+
+  .chefs .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+  .chefs .chef-card {
+    max-width: calc(100% / 2 - 24px);
+  }
+  .imgs-cont {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 24px;
+    height: 190vh;
+  }
+  .pizza {
+    order: 0;
+  }
+  .steak {
+    order: 4;
+  }
+  .burger {
+    order: 1;
+  }
+  .slices {
+    order: 2;
+  }
+  .fried {
+    order: 5;
+  }
+  .gryl {
+    order: 6;
+  }
+  .che-pizza {
+    order: 3;
+  }
+
+  .imgs-cont .food {
+    width: calc(100% / 2 - 24px);
+  }
 }
 /* md screens */
 @media (min-width: 992px) {
@@ -30,6 +72,37 @@
   }
   header .header-text .btns {
     justify-content: start;
+  }
+  .chefs .chef-card {
+    max-width: calc(100% / 3 - 24px);
+  }
+  .imgs-cont {
+    gap: 24px;
+    height: 110vh;
+  }
+  .pizza {
+    order: 0;
+  }
+  .steak {
+    order: 2;
+  }
+  .burger {
+    order: 4;
+  }
+  .slices {
+    order: 2;
+  }
+  .fried {
+    order: 5;
+  }
+  .gryl {
+    order: 6;
+  }
+  .che-pizza {
+    order: 3;
+  }
+  .imgs-cont .food {
+    width: calc(100% / 3 - 24px);
   }
 }
 /* lg screens */
@@ -55,5 +128,67 @@
     color: var(--main-font-color);
     padding-bottom: 6px;
     border-bottom: 2px solid var(--main-color-l);
+  }
+  .navbar .fa-bars {
+    display: none;
+  }
+  .chefs .chef-card {
+    max-width: calc(100% / 3 - 24px);
+  }
+  .imgs-cont {
+    gap: 24px;
+    height: 120vh;
+  }
+  .pizza {
+    order: 0;
+  }
+  .steak {
+    order: 2;
+  }
+  .burger {
+    order: 4;
+  }
+  .slices {
+    order: 2;
+  }
+  .fried {
+    order: 5;
+  }
+  .gryl {
+    order: 6;
+  }
+  .che-pizza {
+    order: 3;
+  }
+  .imgs-cont .food {
+    width: calc(100% / 3 - 24px);
+  }
+}
+/* xlg screens */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1360px;
+    padding-inline: 12px;
+    margin: auto;
+  }
+  .navbar ul {
+    display: flex;
+    gap: 16px;
+  }
+  .navbar ul li {
+    padding: 8px 4px;
+  }
+  .navbar ul li a {
+    color: var(--sec-font-color);
+    font-weight: 600;
+  }
+  .navbar ul li .active {
+    font-weight: 800;
+    color: var(--main-font-color);
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--main-color-l);
+  }
+  .navbar .fa-bars {
+    display: none;
   }
 }
