@@ -59,6 +59,23 @@
   .contact-text .cell {
     width: calc(100% / 2 - 24px);
   }
+  footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 500px;
+  }
+  .footer-about {
+    orphans: 1;
+    width: 45%;
+  }
+  .footer-news {
+    order: 3;
+  }
+  .footer-contact {
+    order: 2;
+    width: 45%;
+  }
 }
 /* md screens */
 @media (min-width: 992px) {
@@ -111,6 +128,24 @@
   .imgs-cont .food {
     width: calc(100% / 3 - 24px);
   }
+  form .form-row {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  form .form-name {
+    width: 50%;
+  }
+  form .form-email {
+    width: 50%;
+  }
+  .footer-news .sub form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-news .sub form input {
+    width: 85%;
+  }
 }
 /* lg screens */
 @media (min-width: 1200px) {
@@ -138,6 +173,9 @@
   }
   .navbar .fa-bars {
     display: none;
+  }
+  header {
+    height: 100vh;
   }
   .chefs .chef-card {
     max-width: calc(100% / 3 - 24px);
@@ -170,11 +208,32 @@
   .imgs-cont .food {
     width: calc(100% / 3 - 24px);
   }
+  footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: auto;
+  }
+  .footer-about {
+    orphans: 1;
+    width: 25%;
+  }
+  .footer-news {
+    order: 2;
+    width: 50%;
+  }
+  .footer-contact {
+    order: 3;
+    width: 25%;
+  }
+  .footer-contact ul li {
+    font-size: 18px;
+  }
 }
 /* xlg screens */
 @media (min-width: 1400px) {
   .container {
-    max-width: 1360px;
+    max-width: 1140px;
     padding-inline: 12px;
     margin: auto;
   }
