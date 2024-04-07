@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- RWD Css File -->
     <link rel="stylesheet" href="css/rwd.css" />
+
   </head>
   <body>
     <!-- Start NavBar -->
@@ -26,15 +27,16 @@
           <h1>
             <a href="#">Mealify</a>
           </h1>
-          <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Chefs</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
           <div class="modes">
-            <i class="fa-solid fa-moon"></i>
+            <input type="checkbox" class="darkModeToggle" id="darkModeToggle">
+            <label for="darkModeToggle"><i class="fa-solid fa-moon"></i></label>
             <i class="fa-solid fa-bars"></i>
+            <ul>
+              <li><a href="#home" class="navel active">Home</a></li>
+              <li><a href="#chefs" class="navel">Chefs</a></li>
+              <li><a href="#gallery" class="navel">Gallery</a></li>
+              <li><a href="#contact" class="navel">Contact</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -42,7 +44,7 @@
     <!-- End NavBar -->
     <!-- /////////////////////// -->
     <!-- Start Header -->
-    <header>
+    <header id="home">
       <div class="container">
         <div class="header-img">
           <img src="assets/images/hero-img.png" alt="dish-image" />
@@ -69,7 +71,7 @@
     <!-- End Header -->
     <!-- /////////////////////// -->
     <!-- Start Chefs Section -->
-    <section class="chefs">
+    <section class="chefs" id="chefs">
       <div class="container">
         <div class="sec-title">
           <span>CHEFS</span>
@@ -124,7 +126,7 @@
     <!-- End Chefs Section -->
     <!-- /////////////////////// -->
     <!-- Start Chefs Gallery -->
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="container">
         <div class="sec-title">
           <span>Gallery</span>
@@ -158,7 +160,7 @@
     <!-- End Gallery Section -->
     <!-- /////////////////////// -->
     <!-- Start Contact Gallery -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <div class="sec-title">
           <span>Contact</span>
@@ -308,7 +310,7 @@
         </div>
         <div class="footer-contact">
           <h3>Get in Touch</h3>
-          <ul class="contact">
+          <ul class="contact-fo">
             <li> <i class="fa-solid fa-location-dot"></i>A108 Adam Street, New York, NY 535022</li>
             <li><i class="fa-solid fa-envelope"></i>contact@example.com</li>
             <li>
@@ -318,5 +320,51 @@
       </div>
     </footer>
     <!-- End footer -->
+    <script>
+      const darkModeToggle = document.getElementById('darkModeToggle');
+      const activeToggle = document.querySelector('.active');
+      const navElements = document.querySelectorAll('.navel');
+      darkModeToggle.addEventListener('change',function(){
+        if(this.checked){
+          document.documentElement.style.setProperty('--main-color-l', ' #c17e1f');
+          document.documentElement.style.setProperty('--sec-color-l', '  #ce1212');
+          document.documentElement.style.setProperty('--main-bg-l', ' #252525');
+          document.documentElement.style.setProperty('--sec-bg-l', '  #202020');
+          document.documentElement.style.setProperty('--main-font-color', ' #fff');
+          document.documentElement.style.setProperty('--other-font-color', ' #ededed');
+          document.documentElement.style.setProperty('--title-font-color', ' #fff');
+          document.documentElement.style.setProperty('--primary-font', '  #fff');
+          document.documentElement.style.setProperty('--sec-font-color', '  #ededed');
+          document.documentElement.style.setProperty('--svg', '  url(../assets/images/svg-wave-black.svg)');
+        }
+        else{
+          document.documentElement.style.setProperty('--main-color-l', ' #ce1212');
+          document.documentElement.style.setProperty('--sec-color-l', '  #c17e1f');
+          document.documentElement.style.setProperty('--main-bg-l', ' #fff');
+          document.documentElement.style.setProperty('--sec-bg-l', '  #ededed');
+          document.documentElement.style.setProperty('--main-font-color', ' #171717');
+          document.documentElement.style.setProperty('--other-font-color', '#4f4f5a');
+          document.documentElement.style.setProperty('--title-font-color', '  #171717');
+          document.documentElement.style.setProperty('--primary-font', '  #050505');
+          document.documentElement.style.setProperty('--sec-font-color', '  #4f4f5a');
+          document.documentElement.style.setProperty('--svg', '  url(../assets/images/svg-wave-white.svg)');
+
+        }
+      })
+      const isActive = function(){
+        navElements.forEach(el=>{
+          el.classList.remove('active');
+        })
+      }
+      navElements.forEach(e=>{
+        e.addEventListener('click',function(){
+          isActive();
+          this.classList.add('active');
+        })
+      })
+
+
+
+</script>
   </body>
 </html>
