@@ -21,6 +21,9 @@
   .chefs .chef-card {
     max-width: calc(100% / 2 - 24px);
   }
+  .chefs .chef-card .card-img {
+    top: -10px;
+  }
   .imgs-cont {
     flex-direction: column;
     flex-wrap: wrap;
@@ -99,6 +102,9 @@
   }
   .chefs .chef-card {
     max-width: calc(100% / 3 - 24px);
+  }
+  .chefs .chef-card .card-img {
+    top: 0;
   }
   .imgs-cont {
     gap: 24px;

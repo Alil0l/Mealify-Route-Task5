@@ -133,6 +133,7 @@ nav {
   top: 0;
   left: 1000px;
   background-color: var(--main-bg-l);
+  transition: 0.5s ease;
 }
 .navbar ul li {
   width: 100%;
@@ -320,9 +321,40 @@ header .playbtn i {
   justify-content: center;
   align-items: center;
   background-color: var(--main-bg-l);
-  border-radius: 12px;
+  border-radius: 8px;
   filter: drop-shadow(2px 2px 6px hsla(0, 0%, 0%, 0.2));
   overflow: hidden;
+  transition: 0.5s ease;
+  position: relative;
+}
+.chefs .chef-card:hover {
+  transform: scale(1.05);
+}
+.chefs .chef-card:hover .overlay {
+  right: 5%;
+}
+.chefs .chef-card .overlay {
+  position: absolute;
+  z-index: 200;
+  top: 5%;
+  right: -50%;
+  overflow: hidden;
+  width: 40px;
+  transition: 0.8s 0.1s ease-out;
+}
+.chefs .chef-card .overlay ul {
+  display: flex;
+  background-color: hsla(0, 0%, 93%, 0.4);
+  border-radius: 8px;
+  flex-direction: column;
+  padding: 16px 0;
+  gap: 12px;
+}
+.chefs .chef-card .overlay ul li a {
+  color: hsl(0, 0%, 50%);
+}
+.chefs .chef-card .overlay ul li a i {
+  font-size: 18px;
 }
 .chefs .chef-card .card-img {
   position: relative;
