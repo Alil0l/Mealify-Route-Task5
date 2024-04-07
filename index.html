@@ -414,74 +414,33 @@
       const darkModeToggle = document.getElementById("darkModeToggle");
       const activeToggle = document.querySelector(".active");
       const navElements = document.querySelectorAll(".navel");
+      const styleChange = document.documentElement.style;
       darkModeToggle.addEventListener("change", function () {
         if (this.checked) {
-          document.documentElement.style.setProperty(
-            "--main-color-l",
-            " #c17e1f"
-          );
-          document.documentElement.style.setProperty(
-            "--sec-color-l",
-            "  #ce1212"
-          );
-          document.documentElement.style.setProperty("--main-bg-l", " #252525");
-          document.documentElement.style.setProperty("--sec-bg-l", "  #202020");
-          document.documentElement.style.setProperty(
-            "--main-font-color",
-            " #fff"
-          );
-          document.documentElement.style.setProperty(
-            "--other-font-color",
-            " #ededed"
-          );
-          document.documentElement.style.setProperty(
-            "--title-font-color",
-            " #fff"
-          );
-          document.documentElement.style.setProperty(
-            "--primary-font",
-            "  #fff"
-          );
-          document.documentElement.style.setProperty(
-            "--sec-font-color",
-            "  #ededed"
-          );
-          document.documentElement.style.setProperty(
+          styleChange.setProperty("--main-color-l", " #c17e1f");
+          styleChange.setProperty("--sec-color-l", "  #ce1212");
+          styleChange.setProperty("--main-bg-l", " #252525");
+          styleChange.setProperty("--sec-bg-l", "  #202020");
+          styleChange.setProperty("--main-font-color", " #fff");
+          styleChange.setProperty("--other-font-color", " #ededed");
+          styleChange.setProperty("--title-font-color", " #fff");
+          styleChange.setProperty("--primary-font", "  #fff");
+          styleChange.setProperty("--sec-font-color", "  #ededed");
+          styleChange.setProperty(
             "--svg",
             "  url(../assets/images/svg-wave-black.svg)"
           );
         } else {
-          document.documentElement.style.setProperty(
-            "--main-color-l",
-            " #ce1212"
-          );
-          document.documentElement.style.setProperty(
-            "--sec-color-l",
-            "  #c17e1f"
-          );
-          document.documentElement.style.setProperty("--main-bg-l", " #fff");
-          document.documentElement.style.setProperty("--sec-bg-l", "  #ededed");
-          document.documentElement.style.setProperty(
-            "--main-font-color",
-            " #171717"
-          );
-          document.documentElement.style.setProperty(
-            "--other-font-color",
-            "#4f4f5a"
-          );
-          document.documentElement.style.setProperty(
-            "--title-font-color",
-            "  #171717"
-          );
-          document.documentElement.style.setProperty(
-            "--primary-font",
-            "  #050505"
-          );
-          document.documentElement.style.setProperty(
-            "--sec-font-color",
-            "  #4f4f5a"
-          );
-          document.documentElement.style.setProperty(
+          styleChange.setProperty("--main-color-l", " #ce1212");
+          styleChange.setProperty("--sec-color-l", "  #c17e1f");
+          styleChange.setProperty("--main-bg-l", " #fff");
+          styleChange.setProperty("--sec-bg-l", "  #ededed");
+          styleChange.setProperty("--main-font-color", " #171717");
+          styleChange.setProperty("--other-font-color", "#4f4f5a");
+          styleChange.setProperty("--title-font-color", "  #171717");
+          styleChange.setProperty("--primary-font", "  #050505");
+          styleChange.setProperty("--sec-font-color", "  #4f4f5a");
+          styleChange.setProperty(
             "--svg",
             "  url(../assets/images/svg-wave-white.svg)"
           );

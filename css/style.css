@@ -30,6 +30,7 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  transition: 0.2s ease;
 }
 body {
   --sb-track-color: var(--main-bg-l);
@@ -685,7 +686,8 @@ footer .container {
   border: none;
 }
 .footer-news ul {
-  max-height: 70px;
+  max-height: 100px;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -693,6 +695,12 @@ footer .container {
 }
 .footer-news ul li {
   width: 50%;
+  padding: 6px 0;
+  transition: 0.5s ease;
+}
+.footer-news ul li:hover {
+  background-color: hsla(240, 7%, 33%, 0.35);
+  padding-left: 8px;
 }
 .footer-news ul li i {
   font-size: 16px;
