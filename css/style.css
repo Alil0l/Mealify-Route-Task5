@@ -402,16 +402,53 @@ header .playbtn i {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  position: relative;
 }
 .imgs-cont .food {
   border: 4px solid var(--main-bg-l);
   width: 100%;
+  overflow: hidden;
   filter: drop-shadow(2px 2px 4px hsla(0, 0%, 0%, 0.3));
 }
+.imgs-cont .food:hover .food-overlay {
+  top: 0;
+}
+.imgs-cont .food:hover img {
+  transform: scale(1.1);
+}
+.imgs-cont .food-overlay {
+  transition: 0.5s ease;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  z-index: 50;
+  top: 110%;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background-color: hsla(0, 0%, 9%, 0.7);
+}
+.imgs-cont .food-overlay h4 {
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 26px;
+}
+.imgs-cont .food-overlay p {
+  max-width: 80%;
+  font-size: 16px;
+  font-weight: 200;
+}
 .imgs-cont .food img {
+  transition: 0.3s ease;
   width: 100%;
   display: block;
 }
+
 /* End of Gallery Section */
 /* ////////////////////// */
 /* Start contact */
