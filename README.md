@@ -4,14 +4,6 @@
  
  ## Header
 
-</center>
-
-
-![image](https://github.com/Alil0l/Portfolio-Website--Route-Assignment4-/assets/137832626/5811e5cf-a0fe-4281-abba-f9a388ec4e6e)
-![image](https://github.com/Alil0l/Portfolio-Website--Route-Assignment4-/assets/137832626/568ad4b4-9ebf-44bc-ba0a-e0baccd503f7)
-
- <center>
-
  * My 5th task with (Route)
  * You can view the site in light or dark mode.
  * This Project is about a resturant showcase to practice using media Query and RWD along side with vanila Javascript.
@@ -25,5 +17,9 @@
  </span>
  
 </center>
+
+![image](https://github.com/Alil0l/Portfolio-Website--Route-Assignment4-/assets/137832626/5811e5cf-a0fe-4281-abba-f9a388ec4e6e)
+![image](https://github.com/Alil0l/Portfolio-Website--Route-Assignment4-/assets/137832626/568ad4b4-9ebf-44bc-ba0a-e0baccd503f7)
+
 
 
