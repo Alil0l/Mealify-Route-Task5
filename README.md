@@ -1,5 +1,9 @@
 # Mealify
 
+## Landing 
+
+ <a href="https://alil0l.github.io/Mealify-Route-Task5/" target="_blank">![image](https://github.com/Alil0l/Portfolio-Website--Route-Assignment4-/assets/137832626/5811e5cf-a0fe-4281-abba-f9a388ec4e6e)</a>
+
 <center>
  
  ## Header
@@ -18,8 +22,9 @@
  
 </center>
 
-![image](https://github.com/Alil0l/Portfolio-Website--Route-Assignment4-/assets/137832626/5811e5cf-a0fe-4281-abba-f9a388ec4e6e)
-![image](https://github.com/Alil0l/Portfolio-Website--Route-Assignment4-/assets/137832626/568ad4b4-9ebf-44bc-ba0a-e0baccd503f7)
+## Another Mode
+
+ <a href="https://alil0l.github.io/Mealify-Route-Task5/" target="_blank">![image](https://github.com/Alil0l/Portfolio-Website--Route-Assignment4-/assets/137832626/568ad4b4-9ebf-44bc-ba0a-e0baccd503f7)</a>
 
 
 
